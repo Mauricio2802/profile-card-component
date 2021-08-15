@@ -1,0 +1,11 @@
+main {
+  background-position: -700px -900px, 600px 350px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+html {
+  font-size: 75%;
+}
+.attribution {
+  left: calc(50% - 225px);
+}

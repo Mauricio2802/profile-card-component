@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: var(--primary-font-size);
+}
+:root {
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+  /* Font-size */
+  --primary-font-size: "Kumbh Sans", sans-serif;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: -500px -450px, 150px 320px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-color: var(--dark-cyan);
+}
+
+.component-ctn {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-img {
+  position: absolute;
+  top: 21%;
+  left: calc(50% - 55px);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.card-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 70px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.minipersonal-ctn {
+  margin-bottom: 10px;
+}
+.personal__name {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.personal__age {
+  color: var(--dark-grayish-blue);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.personal__place {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.stats-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 20px 25px;
+  border-top: 0.2px solid hsla(227, 10%, 46%, 0.2);
+  position: relative;
+  left: -10px;
+}
+
+.ministat-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat__number {
+  margin-bottom: 5px;
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.stat__indicator {
+  color: var(--dark-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Attribution */
+
+.attribution {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 182px);
+  font-size: 1.4rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--very-dark-desaturated-blue);
+  text-decoration: underline;
+}

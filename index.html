@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/medium-mobile.css"
+      media="only screen and (min-width: 425px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/tablet.css"
+      media="only screen and (min-width: 950px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="only screen and (min-width: 1440px)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="component-ctn">
+        <img
+          class="card-img"
+          src="./images/bg-pattern-card.svg"
+          alt="Background Image"
+        />
+        <img
+          class="profile-img"
+          src="./images/image-victor.jpg"
+          alt="Profile Image"
+        />
+        <div class="personal-info">
+          <p class="minipersonal-ctn">
+            <span class="personal__name">Victor Crest</span>
+            <span class="personal__age">26</span>
+          </p>
+          <span class="personal__place">London</span>
+        </div>
+        <div class="stats-ctn">
+          <div class="ministat-ctn">
+            <span class="stat__number">80K</span>
+            <span class="stat__indicator">Followers</span>
+          </div>
+          <div class="ministat-ctn">
+            <span class="stat__number">803K</span>
+            <span class="stat__indicator">Likes</span>
+          </div>
+          <div class="ministat-ctn">
+            <span class="stat__number">1.4K</span>
+            <span class="stat__indicator">Photos</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Mauricio2802">maurice_cl42</a>.
+    </div>
+  </body>
 </html>

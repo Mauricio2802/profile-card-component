@@ -6,6 +6,13 @@ main {
 html {
   font-size: 75%;
 }
+.component-ctn {
+  min-width: 400px;
+}
+.profile-img {
+  top: 25%;
+}
+
 .attribution {
   left: calc(50% - 225px);
 }
